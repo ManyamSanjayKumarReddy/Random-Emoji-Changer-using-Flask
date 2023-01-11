@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emoji Changer</title>
+
+    <style>
+      body {
+        background-color: black;
+      }
+
+      .image-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+      }
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+
+      .heading {
+        color: white;
+        background-color: black;
+        text-align: center;
+        padding: 20px;
+        padding-bottom: 10px;
+        font-size: 2em; /* adjust as needed */
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="heading">Refresh and get New Emoji - Created using Chat GPT</h1>
+
+    <div class="image-container">
+      <img src="{{url_for('static', filename='images/'+image)}}" />
+    </div>
+  </body>
+</html>
